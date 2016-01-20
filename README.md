@@ -31,13 +31,46 @@
   No Error Response returning
 ___________________________________________________________________________________________________________________________
 
-**Show User**
+**User Login**
 ----
   Returns json data about a single user.
 
 * **URL**
 
-  /users/:id
+  /web/v1/user/getUserLogin?{username}&{userpassword}
+
+* **Method:**
+
+  `POST`
+  
+*  **URL Params**
+
+   **Required:**
+ 
+   `username=[String]`
+   `userpassword=[String]`
+
+* **Data Params**
+
+  None
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `[{"userid": "3PUT5KBBZK","username": "aj@gmail.com"}]`
+ 
+* **Error Response:**
+
+  * **No Error Response returning**  <br />
+__________________________________________________________________________________________________________________________
+
+**Get Advertisement By Id**
+----
+  Returns json data about a single Advertisement.
+
+* **URL**
+
+  /web/v1/advertisement/getByAdvertisementId?{advertisementid}
 
 * **Method:**
 
@@ -47,7 +80,7 @@ ________________________________________________________________________________
 
    **Required:**
  
-   `id=[integer]`
+   `advertisementid=["String"]`
 
 * **Data Params**
 
@@ -55,28 +88,11 @@ ________________________________________________________________________________
 
 * **Success Response:**
 
-  * **Code:** 200 <br />
-    **Content:** `{ id : 12, name : "Michael Bloom" }`
+  * **Code:** 200 <br />`{"timestamp": 1421193600000,"adtimerange": "2hr","strttime": "06.00pm","endtime": "12.00pm","userpayment": 3000,"userid": "2SWVABJT5F","advertisementId": "G613Z5DFQL"}`
  
 * **Error Response:**
 
-  * **Code:** 404 NOT FOUND <br />
-    **Content:** `{ error : "User doesn't exist" }`
+  * **No Error Response returning** <br />
 
-  OR
+__________________________________________________________________________________________________________________________
 
-  * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "You are unauthorized to make this request." }`
-
-* **Sample Call:**
-
-  ```javascript
-    $.ajax({
-      url: "/users/1",
-      dataType: "json",
-      type : "GET",
-      success : function(r) {
-        console.log(r);
-      }
-    });
-  ```
