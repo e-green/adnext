@@ -28,9 +28,8 @@
     **Content:** `{"userid":"PLCGY4SDAC","username":"nishan@gmail.com","userpassword":"MTIzNDU2Nzg5"}`
  
 * **Error Response:**
-
-  'No Error Response returning'
----------------------------------------------------------------------------------------------------------------------
+  No Error Response returning
+___________________________________________________________________________________________________________________________
 
 **Show User**
 ----
