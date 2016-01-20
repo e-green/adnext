@@ -65,7 +65,7 @@ ________________________________________________________________________________
   
 __________________________________________________________________________________________________________________________
 
-**Get Advertisement By Id**
+**Get Advertisement By advertisementId**
 ----
   Returns json data about a single Advertisement.
 
@@ -163,3 +163,200 @@ ________________________________________________________________________________
 
 ___________________________________________________________________________________________________________________________
 
+**Get Description By descriptionId**
+----
+  Returns json data about a single Description.
+
+* **URL**
+
+  /web/v1/description/getById?{descriptionid}
+
+* **Method:**
+
+  `POST`
+  
+*  **URL Params**
+
+   **Required:**
+ 
+   `descriptionid=[String]`
+
+* **Data Params**
+
+  None
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{"descriptionid": "3GQFMAMOMJ","imgurl": "https://www.google.lk/url?hgv=ygayc","detail": "Travel with Sri Lankan Airlines","adid": "XI9VASNI0M"}`
+ 
+* **Error Response:**
+
+  * **No Error Response returning**<br />
+
+__________________________________________________________________________________________________________________________
+
+**Get Description By AdId**
+----
+  Returns json data about list of Descriptions.
+
+* **URL**
+
+  /web/v1/description/getByAdId?{adid}
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+ 
+   `adid=[String]`
+
+* **Data Params**
+
+  None
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `[{"descriptionid": "3GQFMAMOMJ","imgurl": "https://www.google.lk/url?hgv=ygayc","detail": "Travel with Sri Lankan Airlines","adid": "XI9VASNI0M"},{"descriptionid": "ZV4S2AX391","imgurl": "https://www.google.lk/url?iou12l","detail": "Travel with Sri Lankan Airlines","adid": "XI9VASNI0M"}]`
+ 
+* **Error Response:**
+
+  * **No Error Response returning** <br />
+  
+__________________________________________________________________________________________________________________________
+
+**Get Platform By platformId**
+----
+  Returns json data about a single Platform.
+
+* **URL**
+
+  /web/v1/platform/getById?{platformid}
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+ 
+   `platformid=[String]`
+
+* **Data Params**
+
+  None
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{"platformid": "9XFBTY90JX","platformusercount": "1000","platformbroadcasttime": "08.00am-10.00am","platformpersecondprice": 0.21}`
+ 
+* **Error Response:**
+
+  * **No Error Response returning** <br />
+    
+__________________________________________________________________________________________________________________________
+
+**Get AdHasPlatform By adHasPlatformId**
+----
+  Returns json data about a single AdHasPlatform.
+
+* **URL**
+
+  /web/v1/adHasPlatform/getByAdHasPlatformId ?{adhasplatformid}
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+ 
+   `adhasplatformid=[String]`
+
+* **Data Params**
+
+  None
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{"adhasplatformid": "SHRY5YG5N8","adid": "G613Z5DFQL","platformid": "9XFBTY90JX","adhasplatformdate":1453099355000}`
+ 
+* **Error Response:**
+
+  * **No Error Response returning** <br />
+    
+__________________________________________________________________________________________________________________________
+
+** Get AdvertisementHasPlatfromModel details By AdId**
+----
+  Returns json data about list of AdvertisementHasPlatfromModels.
+
+* **URL**
+
+  /web/v1/adHasPlatform/getByAdId?{adid}
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+ 
+   `adid=[String]`
+
+* **Data Params**
+
+  None
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `[{"adhasplatformid": "SHRY5YG5N8","advertisementid": "G613Z5DFQL","adtimerange": "2hr","strttime":"06.00pm","endtime": "12.00pm","userpayment": 3000,"username": "sandunwikramasinha@gmail.com","adhasplatformdate": 1453099355000,"platformusercount": "1000","platformbroadcasttime":"08.00am-10.00am","platformpersecondprice": 0.21}]`
+ 
+* **Error Response:**
+
+  * **No Error Response returning** <br />
+    
+__________________________________________________________________________________________________________________________
+
+**Get AdvertisementHasPlatfromModel By adHasPlatformDate**
+----
+  Returns json data about list of AdvertisementHasPlatfromModels.
+
+* **URL**
+
+  /web/v1/adHasPlatform/getByAdHasPlatformDate?{adhasplatformdate}
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+ 
+   `adhasplatformdate=[String]`
+
+* **Data Params**
+
+  None
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `[{"adhasplatformid": "SHRY5YG5N8","advertisementid": "G613Z5DFQL","adtimerange": "2hr","strttime":"06.00pm","endtime": "12.00pm","userpayment": 3000,"username": "sandunwikramasinha@gmail.com","adhasplatformdate": 1453099355000,"platformusercount": "1000","platformbroadcasttime":"08.00am-10.00am","platformpersecondprice": 0.21}]`
+ 
+* **Error Response:**
+
+  * **No Error Response returning** <br />
+    
+__________________________________________________________________________________________________________________________
