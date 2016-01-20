@@ -25,7 +25,7 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{"userid":"PLCGY4SDAC","username":"nishan@gmail.com","userpassword":"MTIzNDU2Nzg5"}`
+    **Content:** `{"userid":"PLCGY4SDAC","username":"nishan@gmail.com"}`
  
 * **Error Response:**
   No Error Response returning
