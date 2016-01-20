@@ -130,4 +130,36 @@ ________________________________________________________________________________
    
 __________________________________________________________________________________________________________________________
 
+**Get Advertisement By Date**
+----
+  Returns json data about list of Advertisement.
+
+* **URL**
+
+  /web/v1/advertisement/getByTimestamp?{timestamp}
+
+* **Method:**
+
+  `GET`
   
+*  **URL Params**
+
+   **Required:**
+ 
+   `timestamp=[String]`
+
+* **Data Params**
+
+  None
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `[{"advertisementid": "G613Z5DFQL","timestamp": 1421193600000,"adtimerange": "2hr","strttime": "06.00pm","endtime": "12.00pm","userpayment": 3000,"username": "sandunwikramasinha@gmail.com"},{"advertisementid":"PVK3RT3NFB","timestamp": 1421193600000,"adtimerange": "1hr","strttime":"08.00am","endtime": "10.00am","userpayment": 1000,"username": "gayan85@gmail.com"},{"advertisementid":"XI9VASNI0M","timestamp": 1421193600000,"adtimerange": "1hr","strttime": "10.00pm","endtime": "12.00pm","userpayment": 300,"username": "sandunwikramasinha@gmail.com"}]`
+ 
+* **Error Response:**
+
+  * **No Error Response returning** <br />
+
+___________________________________________________________________________________________________________________________
+
