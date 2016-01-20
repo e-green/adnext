@@ -360,3 +360,103 @@ ________________________________________________________________________________
   * **No Error Response returning** <br />
     
 __________________________________________________________________________________________________________________________
+
+**Get Site By siteId**
+----
+  Returns json data about a single Site.
+
+* **URL**
+
+  /web/v1/site/getById?{siteid}
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+ 
+   `siteid=[String]`
+
+* **Data Params**
+
+  None
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{"siteid": "FHOISRJYEY","siteaddress": "http://www.youtube.com/","sitedetails": "Video sharing"}`
+ 
+* **Error Response:**
+
+  * **No Error Response returning** <br />
+    
+__________________________________________________________________________________________________________________________
+
+**Get Site By siteAddress**
+----
+  Returns json data about a single Site.
+
+* **URL**
+
+  /web/v1/site/getSiteBySiteAddress?{siteaddress}
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+ 
+   `siteaddress=[String]`
+
+* **Data Params**
+
+  None
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{"siteid": "FHOISRJYEY","siteaddress": "http://www.youtube.com/","sitedetails": "Video sharing"}`
+ 
+* **Error Response:**
+
+  * **No Error Response returning** <br />
+    
+__________________________________________________________________________________________________________________________
+
+**Get SiteAdDetail by siteAdDetailId**
+----
+  Returns json data about a single SiteAdDetail.
+
+* **URL**
+
+  /web/v1/siteAdDetail/getByAdvertisementId?{siteaddetailid}
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+ 
+   `siteaddetailid=[String]`
+
+* **Data Params**
+
+  None
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{"siteaddetailid": "1P7N1YMIND","sitevisiblecount": "1000","sitebroadcasttime": "10.00am-12.00am","sitepersecondprice": 0.16,"siteid": "AM0XC5F558"}`
+ 
+* **Error Response:**
+
+  * **No Error Response returning** <br />
+    
+__________________________________________________________________________________________________________________________
+  
