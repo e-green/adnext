@@ -29,7 +29,7 @@
  
 * **Error Response:**
 
-    **NO Error Response returning**
+  NO Error Response returning
 ---------------------------------------------------------------------------------------------------------------------
 
 **Show User**
